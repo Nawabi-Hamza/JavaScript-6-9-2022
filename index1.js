@@ -33,13 +33,13 @@
 
         // live clock
 
+        let d;
+        let time;
 
 setInterval((a)=>{
-    let d;
-    let time;
     d=new Date();
-   time=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
-document.getElementById('tim').innerHTML=time;
+    time=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+    document.getElementById('tim').innerHTML=time;
 
   
 },10)
