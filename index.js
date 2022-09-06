@@ -96,6 +96,39 @@ var ch=items.filter((v)=>{
 document.write(ch)
 
 
+const item1=[
+    {name:'book',price:120},
+    {name:'pin',price:110},
+    {name:'marker',price:220},
+    {name:'disk',price:20},
+    {name:'zip',price:10},
+    {name:'tv',price:7000}
+]
+
+item1.forEach((v)=>{
+    document.write("item "+v.name+ "  "+" this"+v.price+"</br>");
+})
+
+var red=numb.reduce((total,value,index,array)=>{
+    return total+value;
+})
+document.write(red)
+document.write("</br>")
 
 
+var red1=items.reduce((total,value,index,array)=>{
+    return total+value;
+})
+document.write(red1)
+document.write("</br>")
 
+
+var re=numb.some((v)=>{       //for diffrent number
+    return v<0;
+})
+document.write(re)
+
+var re1=numb.every((v)=>{      //be some all value
+    return v<0;
+})
+document.write(re1)
